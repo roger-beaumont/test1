@@ -23,3 +23,10 @@ questions(questions)
 
 def triquestions():
 	print("Done")
+
+triquestions()
+
+def firstfunction():
+	print("Hellow World")
+
+firstfunction()
