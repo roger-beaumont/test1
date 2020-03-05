@@ -1,0 +1,22 @@
+def questions(questions):
+    print("Voici les possibles questions à poser:", end = '')
+    print("\n 1)Pour quel dieu majeur souhaitez-vous la liste de ses enfants ?", end = '')
+    print("\n 2)Pour quel dieu majeur souhaitez-vous avoir les épouses et leurs enfants respectifs ?", end = '')
+    print("\n 3)Pour quel enfant dun dieu majeur souhaitez-vous avoir ces freres et soeurs et parents ?", end = '')
+
+    print("\n\n Indiquez le numéro de la question choisie:", end = '')
+
+    questions = int(input('> '))
+
+    if questions > 3:
+        mauvaise_reponse("Veuillez taper un chiffre entre 1 et 3 SVP !")
+    elif questions < 1:
+        mauvaise_reponse("Veuillez taper un chiffre entre 1 et 3 SVP !")
+    elif questions in range(4):
+        print("Vous avez choisi la questions:{}".format(questions))
+
+def mauvaise_reponse(pourquoi):
+    print(pourquoi)
+    exit(0)
+
+questions(questions)
